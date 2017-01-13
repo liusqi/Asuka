@@ -1,5 +1,5 @@
 <?php
-require_once('Grid.php');
+namespace src;
 
 class App {
     public function __construct() {
@@ -7,7 +7,10 @@ class App {
     }
     
     public function run(){
-        $grid = new Grid(9,16);
-        $grid->getGrid();
+        $grid = new Grid(18,32);
+        
+        $view = new Views\IndexView();
+        $view->addBody('<h1>hi</hi>');
+        $view->render();
     }
 }

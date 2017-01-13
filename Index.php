@@ -1,7 +1,8 @@
 <?php
 
-require_once('lib.php');
+//require_once('lib.php');
+include 'autoloader.php';
 
-$app = new App();
+$app = new src\App();
 
 $app->run();

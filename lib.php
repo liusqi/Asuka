@@ -1,2 +1,6 @@
 <?php
-require_once('src/App.php');
+spl_autoload_register(function($class){
+    require_once 'src/' . $class . '.php';
+});
+
+require_once 'views/IndexView.php';
