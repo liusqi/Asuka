@@ -8,9 +8,10 @@ class App {
     
     public function run(){
         $grid = new Grid(18,32);
+        $blocks = $grid->getBlocks();
         
-        $view = new Views\IndexView();
-        $view->addBody('<h1>hi</hi>');
+        $view = new Views\IndexView($blocks);
+        
         $view->render();
     }
 }

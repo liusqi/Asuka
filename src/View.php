@@ -9,7 +9,7 @@ class View {
     public function __construct() {
         $this->head .= '<meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=, minimal-ui">
-            <link rel="icon" type="favicon.ico" href="/res/img/favicon.ico">';
+            <link rel="icon" type="favicon.ico" href="res/img/asuka.ico">';
     }
     
     public function addHead($content){
