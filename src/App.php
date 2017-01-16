@@ -12,6 +12,6 @@ class App {
         
         $view = new Views\IndexView($blocks);
         
-        $view->render();
+        $view->render(); 
     }
 }

@@ -10,12 +10,14 @@ class Grid {
     public function __construct($row, $col) {
         $this->row = $row;
         $this->col = $col;
+        $id = 0;
         
         for($i = 0; $i < $row; $i++){
             for($j = 0; $j < $col; $j++){
-                $block = new Block($i, $j, 0);
+                $block = new Block($i, $j, $id);
                 $this->grid[$i][$j] = $block;
                 $this->blocks[] = $block;
+                $id++;
             }
         }
     }
